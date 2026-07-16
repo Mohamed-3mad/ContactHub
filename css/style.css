@@ -1,0 +1,248 @@
+.bg-purple {
+  background-color: #7728fd;
+}
+
+.bg-main {
+  background-color: #ede9fe;
+}
+
+.text-purple {
+  color: #7f22fe;
+}
+
+.bg-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.fit-content {
+  width: fit-content;
+}
+
+/* ========== general ========== */
+
+/* ========== navbar ==========*/
+nav img {
+  width: 40px;
+}
+
+nav .navicon:hover i {
+  color: #364153 !important;
+}
+
+nav .navicon:hover {
+  color: #364153 !important;
+  background-color: #e5e9f0;
+  background-position: center;
+  padding: 8px;
+  border-radius: 10px;
+  margin-inline: -8px;
+  cursor: pointer;
+}
+
+nav button {
+  transition: all 0.2s;
+}
+
+nav button.add-btn:hover {
+  box-shadow: 0px 7px 10px #dcc9ff;
+  transform: translateY(-1px);
+}
+
+nav .modal-body div {
+  width: 90px;
+  height: 90px;
+}
+
+nav .modal-body textarea {
+  resize: none;
+  height: 70px;
+}
+
+nav .modal {
+  backdrop-filter: blur(5px);
+}
+
+/* ========== navbar ==========*/
+
+/* ========== header ========== */
+input:focus-visible {
+  outline: none;
+}
+
+.fs-12 {
+  font-size: 0.75rem;
+}
+
+header input:focus {
+  border-color: transparent !important;
+  outline: 1px solid #7f22fe;
+  box-shadow: 0px 0px 5px #7f22fe;
+}
+
+header i.fa-search {
+  left: 25px;
+  pointer-events: none;
+}
+
+header .contact-card img {
+  width: 60px;
+}
+
+header .contact-card .footer-buttons i {
+  width: 40px;
+  padding: 12px;
+  transition: all 0.2s;
+}
+
+header .contact-card i.fa-heart:hover {
+  background-color: #f8fafc;
+  color: red !important;
+  border-radius: 8px;
+}
+
+header .contact-card i.fa-star:hover {
+  background-color: #f8fafc;
+  color: #ffb900 !important;
+  border-radius: 8px;
+}
+
+header .contact-lists p,
+header .contact-lists .contact-info span {
+  font-size: 11px;
+}
+
+header .contact-lists img {
+  width: 40px;
+}
+
+header .contact-lists .contact {
+  background-color: #f7fafc;
+  border: 1px solid #f7fafc;
+}
+
+header .contact-lists .contact-bg {
+  width: 35px;
+  height: 35px;
+}
+
+header .contact-lists .call-bg {
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
+}
+
+header #delete-fav i {
+  background-color: #ffebec !important;
+  border-radius: 8px;
+}
+
+.fav-emer-icon div {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.fav-emer-icon div i {
+  font-size: 0.5rem !important;
+}
+.fav-pos {
+  top: -0.25rem;
+  right: -0.25rem;
+}
+.emergency-pos {
+  bottom: -0.25rem;
+  right: -0.25rem;
+}
+
+.width-height {
+  width: 2.125rem;
+  height: 2.125rem;
+}
+.fav-hover,
+.emergency-hover,
+.fav-hover-added,
+.emergency-hover-added {
+  transition: all 0.2s;
+}
+
+.fav-hover-bef:hover,
+.emergency-hover-bef:hover {
+  background-color: oklch(96.7% 0.003 264.542) !important;
+}
+.fav-hover-added:hover {
+  background-color: oklch(96.2% 0.059 95.617) !important;
+}
+
+.emergency-hover-added:hover {
+  background-color: oklch(89.2% 0.058 10.001) !important;
+}
+
+.delete-hover,
+.edit-hover,
+.edit-hover i,
+.delete-hover i,
+.phone-hover,
+.email-hover,
+.email-hover i {
+  transition: all 0.2s;
+}
+.email-hover {
+  background-color: oklch(96.9% 0.016 293.756) !important;
+}
+.edit-hover:hover {
+  background-color: oklch(96.2% 0.018 272.314) !important;
+  border-radius: 0.5rem;
+}
+
+.delete-hover:hover {
+  background-color: oklch(96.9% 0.015 12.422) !important;
+  border-radius: 0.5rem;
+}
+
+.edit-hover:hover i {
+  color: oklch(51.1% 0.262 276.966) !important;
+}
+
+.delete-hover:hover i {
+  color: oklch(58.6% 0.253 17.585) !important;
+}
+
+.phone-hover:hover {
+  background-color: oklch(95% 0.052 163.051) !important;
+}
+.email-hover:hover {
+  background-color: oklch(94.3% 0.029 294.588) !important;
+}
+
+.email-hover:hover i {
+  color: oklch(82.8% 0.189 84.429) !important;
+}
+
+.inner {
+  box-shadow:
+    0 1px 3px 0 var(--tw-shadow-color, #0000001a),
+    0 1px 2px -1px var(--tw-shadow-color, #0000001a) !important;
+
+  transition: all 0.2s;
+}
+
+.inner:hover {
+  box-shadow:
+    0 10px 15px -3px var(--tw-shadow-color, #0000001a),
+    0 4px 6px -4px var(--tw-shadow-color, #0000001a) !important;
+}
+
+.emer-cont,
+.fav-cont {
+  transition: all 0.2s;
+}
+
+.emer-cont:hover {
+  border-color: oklch(96.9% 0.015 12.422) !important;
+  background-color: oklch(96.9% 0.015 12.422) !important;
+}
+
+.fav-cont:hover {
+  border-color: oklch(92.4% 0.12 95.746) !important;
+  background-color: oklch(98.7% 0.022 95.277) !important;
+}
