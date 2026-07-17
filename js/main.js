@@ -9,6 +9,8 @@ var contactFavInput = document.getElementById("fav");
 var contactEmargInput = document.getElementById("emarg");
 var searchInput = document.getElementById("searchInput");
 
+var emptyContact = document.getElementById("emptyContact");
+
 var totalCount = document.getElementById("total");
 var favoriteCount = document.getElementById("favorite-count");
 var emergencyCount = document.getElementById("Emar-count");
@@ -61,8 +63,12 @@ function createContact() {
 
 function displayContacts(contactArr) {
   var temp = ``;
-  for (var i = 0; i < contactArr.length; i++) {
-    temp += `<div class="contact-card col-12 col-sm-6 p-2">
+  if (contactArr.length === 0) {
+    emptyContact.classList.remove("d-none");
+  } else {
+    emptyContact.classList.add("d-none");
+    for (var i = 0; i < contactArr.length; i++) {
+      temp += `<div class="contact-card col-12 col-sm-6 p-2">
                 <div class="inner p-3 rounded-4">
                   <div>
                     <div class="d-flex gap-3 align-items-start">
@@ -153,6 +159,7 @@ function displayContacts(contactArr) {
                   </div>
                 </div>
               </div>`;
+    }
   }
   contacts.innerHTML = temp;
 }
