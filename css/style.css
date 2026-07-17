@@ -246,3 +246,13 @@ header #delete-fav i {
   border-color: oklch(92.4% 0.12 95.746) !important;
   background-color: oklch(98.7% 0.022 95.277) !important;
 }
+
+.width-height80 {
+  height: 5rem;
+  width: 5rem;
+}
+
+.py-80 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
